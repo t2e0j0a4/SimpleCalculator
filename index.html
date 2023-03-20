@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+    <div class="page">
+        <div class="calculator">
+            <div class="calciDisplay">
+                <input type="text" id="display" title="input" readonly>
+            </div>
+            <div class="claciButtons">
+                <div class="btnRow1 btnRow">
+                    <button type="button" class="btn btn1" onclick="clearScreen()">AC</button>
+                    <button type="button" class="btn btn1" onclick="addNum('%')">%</button>
+                    <button type="button" class="btn btn1" onclick="addNum('/')">/</button>
+                    <button type="button" class="btn btn1" onclick="delNum()">Del</button>
+                </div>
+                <div class="btnRow2 btnRow">
+                    <button type="button" class="btn btn1" onclick="addNum('7')">7</button>
+                    <button type="button" class="btn btn1" onclick="addNum('8')">8</button>
+                    <button type="button" class="btn btn1" onclick="addNum('9')">9</button>
+                    <button type="button" class="btn btn1" onclick="addNum('*')">x</button>
+                </div>
+                <div class="btnRow3 btnRow">
+                    <button type="button" class="btn btn1" onclick="addNum('4')">4</button>
+                    <button type="button" class="btn btn1" onclick="addNum('5')">5</button>
+                    <button type="button" class="btn btn1" onclick="addNum('6')">6</button>
+                    <button type="button" class="btn btn1" onclick="addNum('-')">-</button>
+                </div>
+                <div class="btnRow4 btnRow">
+                    <button type="button" class="btn btn1" onclick="addNum('1')">1</button>
+                    <button type="button" class="btn btn1" onclick="addNum('2')">2</button>
+                    <button type="button" class="btn btn1" onclick="addNum('3')">3</button>
+                    <button type="button" class="btn btn1" onclick="addNum('+')">+</button>
+                </div>
+                <div class="btnRow5 btnRow">
+                    <button type="button" class="btn btn1" onclick="plusminus()">+/-</button>
+                    <button type="button" class="btn btn1" onclick="addNum('0')">0</button>
+                    <button type="button" class="btn btn1" onclick="addNum('.')">.</button>
+                    <button type="button" class="btn btn1" onclick="calculate()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
